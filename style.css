@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: "miama";
+  src: url(fonts/Miama.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+/*----------------------------
+        header styles 
+------------------------------*/
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 1) 0%,
+    rgba(119, 119, 119, 0) 100%
+  );
+  padding-top: 60px;
+}
+/*----------------------------
+        nav styles 
+------------------------------*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.nav-h3 {
+  color: #e6533c;
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 47px;
+  border-radius: 39px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.nav ul li a:hover {
+  color: #e6533c;
+  transition: all 0.3s ease;
+}
+
+#home-button {
+  padding: 8px 20px;
+  background: #e6533c;
+  font-weight: 600;
+  border-radius: 46px;
+}
+.about-button {
+  padding: 0 20px;
+}
+
+#home-button:hover,
+#home-button:hover a {
+  background: #ff7f6b;
+  cursor: pointer;
+  color: rgb(53, 52, 52);
+  transition: all 0.3s ease;
+}
+
+.fa-bars {
+  display: none;
+}
+
+/*----------------------------
+        nav styles 
+------------------------------*/
+
+/*----------------------------
+        Responsive Styles
+------------------------------*/
+
+@media (max-width: 480px) {
+  /*----------------------------
+        header styles 
+------------------------------*/
+
+  header {
+    padding-top: 50px;
+  }
+
+  /*----------------------------
+        nav styles 
+------------------------------*/
+
+  .nav {
+    max-width: 90%;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+/*----------------------------
+        For Tablet
+------------------------------*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /*----------------------------
+        header styles 
+------------------------------*/
+
+  header {
+    padding-top: 50px;
+  }
+
+  /*----------------------------
+        nav styles 
+------------------------------*/
+
+  .nav {
+    max-width: 90%;
+  }
+
+  .nav ul li a {
+    font-size: 1rem;
+  }
+}
