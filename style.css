@@ -25,6 +25,7 @@ header {
     rgba(119, 119, 119, 0) 100%
   );
   padding-top: 60px;
+  margin-bottom: 100px;
 }
 /*----------------------------
         nav styles 
@@ -268,6 +269,108 @@ header {
 }
 
 /*----------------------------
+        Main Section Styles 
+------------------------------*/
+
+/*----------------------------
+ Change Your Habit Section Styles 
+------------------------------*/
+
+.change-your-habit {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.change-your-habit-heading {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.change-your-habit-paragraph {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+}
+
+.change-your-habit-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.change-your-habit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: transparent 2px solid;
+  padding: 30px 20px;
+}
+
+#card-1:hover {
+  cursor: pointer;
+  border: #e6533c 2px solid;
+  box-shadow: 0px 0px 20px 20px rgba(230, 83, 60, 0.2);
+  transition: all 1s ease;
+}
+#card-2:hover {
+  cursor: pointer;
+  border: #3c80e6 2px solid;
+  box-shadow: 0px 0px 20px 20px rgba(60, 128, 230, 0.2);
+  transition: all 1s ease;
+}
+#card-3:hover {
+  cursor: pointer;
+  border: #3ce661 2px solid;
+  box-shadow: 0px 0px 20px 20px rgba(60, 230, 97, 0.2);
+  transition: all 1s ease;
+}
+#card-4:hover {
+  cursor: pointer;
+  border: #563ce6 2px solid;
+  box-shadow: 0px 0px 20px 20px rgba(86, 60, 230, 0.2);
+  transition: all 1s ease;
+}
+
+.change-your-habit-card img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.change-your-habit-card:hover img {
+  box-shadow: 0px 0px 20px 5px #dbdbdb;
+  transition: all 0.8s ease;
+}
+
+.card-h5 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 5px;
+}
+
+.card-paragraph {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.3px;
+}
+/*----------------------------
         Responsive Styles
 ------------------------------*/
 
@@ -278,6 +381,7 @@ header {
 
   header {
     padding-top: 50px;
+    margin-bottom: 50px;
   }
 
   /*----------------------------
@@ -392,6 +496,24 @@ header {
     line-height: 0.945rem;
     letter-spacing: 0.04725rem;
   }
+
+  /*----------------------------
+ Change Your Habit Section Styles 
+------------------------------*/
+
+  .change-your-habit {
+    max-width: 90%;
+    margin-bottom: 65px;
+  }
+
+  .change-your-habit-heading {
+    font-size: 2rem;
+  }
+
+  .change-your-habit-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
 }
 
 /*----------------------------
@@ -450,5 +572,17 @@ header {
   .hero-image-info2 {
     bottom: 430px;
     right: 120px;
+  }
+  /*----------------------------
+ Change Your Habit Section Styles 
+------------------------------*/
+
+  .change-your-habit {
+    max-width: 90%;
+    margin-bottom: 85px;
+  }
+
+  .change-your-habit-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
