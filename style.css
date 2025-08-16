@@ -314,6 +314,7 @@ header {
   justify-content: center;
   align-items: center;
   border: transparent 2px solid;
+  border-radius: 5px;
   padding: 30px 20px;
 }
 
@@ -585,4 +586,8 @@ header {
   .change-your-habit-cards {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.none {
+  display: none;
 }
