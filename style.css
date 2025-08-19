@@ -371,6 +371,213 @@ header {
   line-height: 18px; /* 128.571% */
   letter-spacing: 0.3px;
 }
+
+/*----------------------------
+     Run Extra Mile Styles
+------------------------------*/
+
+.run-extra-mile {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 30px 32px 30px 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  border-radius: 18px;
+}
+
+.run-extra-mile-content {
+  max-width: 50%;
+}
+
+.run-extra-mile-content-h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.run-extra-mile-content-paragraph {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+  margin-bottom: 34px;
+}
+
+.run-extra-mile-image {
+  width: 360px;
+  max-width: 50%;
+  height: 312px;
+  background-image: url(images/run.jpg);
+  background-size: 320%;
+  background-repeat: no-repeat;
+  background-position: 69% 32%;
+  border-radius: 18px;
+}
+/* .run-extra-mile-image img {
+  width: 100%;
+} */
+
+/*----------------------------
+     BMI Calculator Styles
+------------------------------*/
+
+.bmi-calculator-heading {
+  margin-bottom: 50px;
+  max-width: 670px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.bmi-calculator-h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.bmi-calculator-paragraph {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+}
+
+.bmi-calculator-content-section {
+  background: #222;
+}
+
+.bmi-calculator-content {
+  padding: 52px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.bmi-table {
+  width: 50%;
+}
+
+.bmi-table-h4 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 52px;
+}
+
+.bmi-calculator-content table {
+  border-collapse: collapse;
+}
+th,
+td {
+  font-family: "Inter", sans-serif;
+  padding: 13px 18px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+.bmi-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.bmi-form-container {
+  width: 50%;
+}
+
+.bmi-form-container-h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  margin-bottom: 14px;
+}
+
+.bmi-form-container-paragraph {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+  margin-bottom: 34px;
+}
+
+.bmi-form {
+  margin-bottom: 34px;
+}
+
+input {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter", sans-serif;
+  line-height: 1.375rem;
+  border: 1px transparent solid;
+  width: 100%;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid #e6533c;
+  transition: border 0.3s ease;
+}
+
+.control {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  background-color: rgba(56, 56, 56);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inter", sans-serif;
+  line-height: 1.375rem;
+  border: 1px transparent solid;
+  width: 100%;
+  appearance: none;
+  outline: none;
+}
+
+.control:focus {
+  border: 1px solid #e6533c;
+  transition: border 0.3s ease;
+}
+
+#bmi-select-activity {
+  grid-column: span 2;
+}
+
+select {
+  background: url(icons/down-arrow.svg) no-repeat right 24px center;
+}
+
 /*----------------------------
         Responsive Styles
 ------------------------------*/
@@ -515,6 +722,40 @@ header {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+
+  /*----------------------------
+     Run Extra Mile Styles
+------------------------------*/
+
+  .run-extra-mile {
+    max-width: 90%;
+    margin-bottom: 65px;
+    padding: 30px 33px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .run-extra-mile-content {
+    max-width: 100%;
+  }
+
+  .run-extra-mile-content-h2 {
+    font-size: 2rem;
+  }
+
+  .run-extra-mile-content-paragraph {
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+  }
+
+  .run-extra-mile-image {
+    max-width: 100%;
+    height: 170px;
+    background-size: 150%;
+  }
+  .run-extra-mile-content-button {
+    width: 100%;
+  }
 }
 
 /*----------------------------
@@ -585,6 +826,66 @@ header {
 
   .change-your-habit-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*----------------------------
+     Run Extra Mile Styles
+------------------------------*/
+
+  .run-extra-mile {
+    max-width: 90%;
+    margin-bottom: 72px;
+    padding: 40px 45px 40px 54px;
+    gap: 50px;
+  }
+
+  .run-extra-mile-content-h2 {
+    font-size: 2.25rem;
+  }
+
+  .run-extra-mile-image {
+    width: 256px;
+  }
+
+  /*----------------------------
+     BMI Calculator Styles
+------------------------------*/
+
+  .bmi-calculator-heading {
+    max-width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .bmi-calculator-h2 {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 120%;
+    margin-bottom: 14px;
+  }
+
+  .bmi-calculator-paragraph {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: "Inter", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.01875rem;
+  }
+
+  .bmi-calculator-content {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 62px;
+  }
+
+  .bmi-table {
+    width: 100%;
+  }
+
+  .bmi-form-container {
+    width: 100%;
   }
 }
 
